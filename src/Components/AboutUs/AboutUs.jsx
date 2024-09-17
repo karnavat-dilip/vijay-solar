@@ -30,7 +30,8 @@ import 'react-image-lightbox/style.css';
 function About() {
     return (
         <div>
-            <p>Vijay Solar Energies Limited ("WEL”) was founded in 1990. It is India’s largest manufacturer of solar PV modules with the largest aggregate installed capacity of 12 GW, as of June 30, 2023 (Source: CRISIL Report).</p>
+            <p>At Vijay Solar Energy, we’re dedicated to harnessing the power of the sun to drive a sustainable future. With a commitment to innovation and excellence, we provide cutting-edge solar energy solutions tailored to meet the diverse needs of our clients. Our mission is to deliver reliable, efficient, and environmentally friendly solar systems that not only reduce energy costs but also contribute to a cleaner planet.
+            </p>
         </div>
     );
 }
@@ -84,7 +85,8 @@ function AboutUs() {
                         </div>
                         <div className='second-child' data-aos="fade-up">
                             <h1>Welcome To vijay solar energy</h1>
-                            <p>‘VIJAY SOLAR ENERGY’ is an authorized MNRE guaranteed Solar Contractor . ‘VIJAY SOLAR ENERGY’ has practical experience in custom solar power arrangements.It is our obsession to give you extraordinary consumer loyalty and administration in each part of your solar board establishment. ‘VIJAY SOLAR ENERGY’ is exclusive and worked by MNRE and GEDA . When they introduced solar boards on their home in 2018.</p>
+                            <p>At Vijay Solar Energy, we’re dedicated to harnessing the power of the sun to drive a sustainable future. With a commitment to innovation and excellence, we provide cutting-edge solar energy solutions tailored to meet the diverse needs of our clients. Our mission is to deliver reliable, efficient, and environmentally friendly solar systems that not only reduce energy costs but also contribute to a cleaner planet.
+                            </p>
                         </div>
                         {/* <div data-aos="fade-up">
                             <h1>Our Certificates</h1>
@@ -139,7 +141,7 @@ function AboutUs() {
 
                                     <h2>Performence</h2>
                                     <p>
-                                    The efficiency of a solar panel is a measure of how well it converts sunlight into electricity. High-efficiency panels can produce more energy from the same amount of sunlight.
+                                        The efficiency of a solar panel is a measure of how well it converts sunlight into electricity. High-efficiency panels can produce more energy from the same amount of sunlight.
 
                                     </p>
                                 </div>
@@ -150,7 +152,7 @@ function AboutUs() {
                                     <h2>High Quality
                                     </h2>
                                     <p>
-                                    Using high-quality materials (e.g., tempered glass, durable backsheet, and high-efficiency cells) ensures the longevity and efficiency of the panels.
+                                        At Vijay Solar Energy, quality is not just a standard—it’s the cornerstone of everything we do. Our dedication to high-quality products and services ensures that you receive a solar energy system that is not only efficient but also durable, reliable, and built to last.
 
                                     </p>
                                 </div>
@@ -159,7 +161,7 @@ function AboutUs() {
 
                                     <h2>Testing</h2>
                                     <p>
-                                    Measures the power output of the panel under standard test conditions (STC) to ensure it meets the rated specifications.
+                                        At Vijay Solar Energy, we understand that the integrity and performance of our solar systems hinge on rigorous testing and meticulous design. Our comprehensive testing design ensures that every component of your solar energy system meets the highest standards of quality, reliability, and efficiency
                                     </p>
                                 </div>
                             </div>
@@ -212,7 +214,8 @@ function AboutUs() {
 
                                 <h2>Our Vision</h2>
                                 <p>
-                                    We are planning to store and provide data base on customer server for Solar Submersible Pump Controller.
+                                    Empowering a Sustainable Future Through Innovation and Excellence
+                                    At Greet Solar, our vision is to lead the transformation towards a sustainable and energy-efficient future by setting new benchmarks in solar energy solutions. We are committed to advancing solar technology and delivering exceptional EPC services that empower businesses and communities to harness the full potential of the sun.
 
 
                                 </p>
@@ -242,7 +245,7 @@ function AboutUs() {
                                     <SwiperSlide className='swiper-child'>
                                         <div>
                                             <p>
-                                                "A wide range of varity available with reasonable price."
+                                                "At Greet Solar, our greatest asset is the satisfaction of our customers."
 
                                             </p>
                                             <img src={TaTa} width='100' />
@@ -254,7 +257,7 @@ function AboutUs() {
                                     <SwiperSlide className='swiper-child'>
                                         <div>
                                             <p>
-                                            "The best solar solution and service provide by company."
+                                                "We take pride in delivering exceptional solar solutions and services, and we’re thrilled to share the positive experiences of those who have trusted us with their solar energy needs. "
                                             </p>
                                             <img src={reliance} width='100' />
                                             <h3>

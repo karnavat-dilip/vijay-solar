@@ -15,6 +15,7 @@ import EarthingKit from '../../Assets/Assessory/Earthing Kit.png'
 import EndClamp from '../../Assets/Assessory/End Clamp.png'
 import JBolt from '../../Assets/Assessory/J Bolt.png'
 import MidClamp from '../../Assets/Assessory/Mid Clamp.png'
+import gelvenaiz from '../../Assets/Assessory/gelvenaiz-pipe.jpg'
 import cable1 from '../../Assets/cable/cable1.jpg'
 import cable2 from '../../Assets/cable/cable2.jpg'
 
@@ -142,7 +143,13 @@ function AllProduct() {
         img: ACDBBOX,
         title: 'ACDB Box',
         description:'IP 67 Enclosure with Transparent cover'
-    }
+    },
+    {
+      id: uuidv4(),
+      img: gelvenaiz,
+      title: 'gelvenaiz pipe',
+      description:'hot deep gi 80 micron'
+  }
 ]
   return (
     <div>

@@ -20,43 +20,42 @@ import s3 from '../../Assets/Solar-Panel-Image.png'
 import s4 from '../../Assets/maxresdefault.jpg'
 import s5 from '../../Assets/maxresdefault (1).jpg'
 import { FcCustomerSupport } from "react-icons/fc";
+import { Accordion, styled } from '@mui/material';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionActions from '@mui/material/AccordionActions';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Qualitypolicy() {
     useEffect(() => {
         AOS.init()
     }, [])
-    const products = [
+    const productapplication = [
         {
-          id: uuidv4(),
-          img: s1,
-          title: 'Pre-Design'
-        },
-        {
-          id: uuidv4(),
-          img: s2,
-          title: 'Detailed-Design'
-        },
-        {
-          id: uuidv4(),
-          img: s3,
-          title: 'Solar-Permit-Design'
-        },
-        {
-          id: uuidv4(),
-          img: s5,
-          title: 'Shadow Analysis Report & Structure Certificate'
-        },
-        {
-          id: uuidv4(),
-          img: s4,
-          title: 'MW Ground Mount Design'
+            id: uuidv4(),
+            img: s1,
+            Appname: 'Pre-Design',
+            moreinfo: 'Solar pre- design is a critical step that lays the groundwork for a successful solar energy project.By conducting thorough assessments and analyses, pre - design helps ensure that the final solar system is well - suited to the site’s conditions and the clients needs, minimizing risks and maximizing performance and savings.'
         },
         {
             id: uuidv4(),
-            img: s4,
-            title: 'Reports'
-          }
-      ]
+            img: s2,
+            Appname: 'Post-Design',
+            moreinfo:'Solar Post-Design is the phase that follows the initial design and installation of a solar energy system. This crucial stage focuses on optimizing the performance, ensuring the system operates effectively, and addressing any issues that may arise after the system is up and running. It encompasses ongoing support, monitoring, and maintenance to ensure the solar system continues to meet its intended goals and performs efficiently throughout its lifespan.'
+        },
+        {
+            id: uuidv4(),
+            img: s3,
+            Appname: 'Site Survey & Land Feasibility Services',
+            moreinfo:'At Greet Solar, our Site Survey & Land Feasibility Services are designed to ensure that your solar energy project starts with a solid foundation. These services are crucial in assessing the suitability of your site for solar installations, optimizing system design, and addressing any potential challenges before project implementation.'
+        },
+        {
+            id: uuidv4(),
+            img: s5,
+            Appname: 'Shadow Analysis and Structural Report',
+            moreinfo:'At Greet Solar, we understand that thorough Shadow Analysis and a detailed Structural Report are essential components of a successful solar energy project. These analyses ensure that your solar system is optimized for maximum efficiency and that the installation site can support the system’s requirements.'
+        }
+    ]
     return (
         <div>
             <Breadcrumbs title='Services' />
@@ -83,56 +82,38 @@ function Qualitypolicy() {
                             <p><strong>Want to buy Solar Rooftop System, Solar Rooftop Panels, Solar water pumps for your house? We at Palanpur solar provide and install all types of solar panel solutions & services at the best price with lower maintenance costs.</strong></p>
                         </div>
                     </div>
-                    <div>
-                        <div className='product-container'>
-                            <Swiper
 
-                                breakpoints={{
-                                    640: {
-                                        slidesPerView: 2,
-                                        spaceBetween: 20,
-                                    },
-                                    768: {
-                                        slidesPerView: 4,
-                                        spaceBetween: 40,
-                                    },
-                                    1024: {
-                                        slidesPerView: 5,
-                                        spaceBetween: 50,
-                                    },
-                                }}
-                                loop={true}
-                                centeredSlides={true}
-                                autoplay={{
-                                    delay: 2500,
-                                    disableOnInteraction: false,
-                                }}
-                                pagination={true}
-                                navigation={true}
-                                modules={[Autoplay, Pagination, Navigation]}
+                    <section data-aos="fade-up">
+                        <div className='container'>
+                            <div className='h1-container'>
+                               
+                            </div>
+                            <div className='grid-container'>
+                                {productapplication?.map((product, index) => {
+                                    return (
+                                        <div className='grid-item'>
+                                            <img src={product.img} width='100'/>
+                                            <h1>{product.Appname}</h1>
+                                            <Accordion style={{ background: 'aliceblue', boxShadow: 'none' }}>
+                                                <AccordionSummary
+                                                    expandIcon={<ExpandMoreIcon />}
 
-                            >
-                                {
-                                    products?.map((product, index) => {
-                                        return (
-                                            <SwiperSlide key={product.id} className='swiper-child'>
-                                                {/* <div key={product.id} className='swiper-child'> */}
-                                                <a href='#'>
-                                                    <img src={product.img} width='100px' height='100px' />
-                                                    <h3>{product.title}</h3>
-                                                </a>
-                                                {/* </div> */}
-                                            </SwiperSlide>
-
-                                        )
-                                    })
-                                }
-                            </Swiper>
+                                                >
+                                                    More Info
+                                                </AccordionSummary>
+                                                <AccordionDetails>
+                                                    {product.moreinfo}
+                                                </AccordionDetails>
+                                            </Accordion>
+                                        </div>
+                                    )
+                                })}
+                            </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
                 <div className='CustomerSupport' data-aos="fade-up">
-                    <div><FcCustomerSupport style={{fontSize: '-webkit-xxx-large'}}/></div>
+                    <div><FcCustomerSupport style={{ fontSize: '-webkit-xxx-large' }} /></div>
                     <div>
                         <h5>Do You Still Have A Question Regarding Our Services?</h5>
                         <p>To know more about our services, please contact us.</p>

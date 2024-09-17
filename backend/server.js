@@ -15,7 +15,9 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+console.log(__dirname);
 
+app.use(express.static(path.join(__dirname, '../build')));
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST,
   port: process.env.SMTP_PORT,
@@ -26,6 +28,9 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+app.get('/',(req,res)=>{
+  res.sendFile(path.join(__dirname, '../build.index.html'))
+})
 
 app.post('/send-email', (req, res) => {
   const { name, email,number,message } = req.body;

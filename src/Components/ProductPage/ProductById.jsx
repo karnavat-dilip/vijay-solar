@@ -20,6 +20,7 @@ import EarthingKit from '../../Assets/Assessory/Earthing Kit.png'
 import EndClamp from '../../Assets/Assessory/End Clamp.png'
 import JBolt from '../../Assets/Assessory/J Bolt.png'
 import MidClamp from '../../Assets/Assessory/Mid Clamp.png'
+import gelvenaiz from '../../Assets/Assessory/gelvenaiz-pipe.jpg'
 import cable1 from '../../Assets/cable/cable1.jpg'
 import cable2 from '../../Assets/cable/cable2.jpg'
 
@@ -41,21 +42,38 @@ function ProductById() {
     const productsData = {
         "panels": [
             {
+                "id": 20,
+                "type": "Gelvenaiz pipe",
+                "img": gelvenaiz,
+                "description": "hot deep gi 80 micron",
+                "features": [
+                    "",
+
+                ],
+                "specifications": [
+                    ""
+
+                ],
+                "other_info": [
+                    ""
+                ]
+            },
+            {
                 "id": 19,
                 "type": "ACDB Box",
                 "img": ACDBBOX,
                 "description": "IP 67 Enclosure with Transparent cover",
                 "features": [
-                    "MCB or Fuse",
-                  
+                    "l&T MCB or Fuse",
+
                 ],
                 "specifications": [
                     "SPD",
                     "Wire polycabe or RR",
-                  
+
                 ],
                 "other_info": [
-                   ""
+                    ""
                 ]
             },
             {
@@ -65,14 +83,14 @@ function ProductById() {
                 "description": "Brand Self Locking Stainless Steel Ball Lock Cable Ties",
                 "features": [
                     "Provides a strong, durable method of bundling and fastening",
-                    
+
                 ],
                 "specifications": [
                     "The ties are designed for use in application where strength, vibration, weathering, corrosion extremes are a factor.",
-                  
+
                 ],
                 "other_info": [
-                   ""
+                    ""
                 ]
             },
             {
@@ -81,15 +99,17 @@ function ProductById() {
                 "img": DCDBBOX,
                 "description": "IP 67 Enclosure with Transparent cover",
                 "features": [
-                    "MCB or Fuse",
+                    "Havells MCB or Fuse",
+                    "Finder spd",
+                    "heavy connector"
                 ],
                 "specifications": [
                     "SPD",
-                  
+
                 ],
                 "other_info": [
                     "Wire polycabe or RR",
-                    
+
                 ]
             },
             {
@@ -100,11 +120,11 @@ function ProductById() {
                 "features": [
                     "1 Nos-LA",
                     "(1 mtr Length, 14 mm Dia)",
-                   
+
                 ],
                 "specifications": [
                     "1 Set-Mounting Base & SS-304 Nut-Bolt Set",
-                    
+
                 ],
                 "other_info": [
                     "1 Nos- 10kg & 15 kg BFC Bag",
@@ -147,15 +167,15 @@ function ProductById() {
                 "description": "Material : Aluminium",
                 "features": [
                     "Thickness : 3 mm",
-                    
+
                 ],
                 "specifications": [
                     "Quantity Per Pack : 50 Piece",
-                  
+
                 ],
                 "other_info": [
                     "Clamp : 30 mm , 35 mm , 40 mm",
-                    
+
                 ]
             },
             {
@@ -166,11 +186,11 @@ function ProductById() {
                 "features": [
                     "Max. Operating Temperature: 85°C .",
                     "Flammability: IEC 60332-1",
-                 
+
                 ],
                 "specifications": [
                     "Flame Retardant",
-                   
+
                 ],
                 "other_info": [
                     "Smooth Surface with Enhanced Lubrication Properties",
@@ -186,12 +206,12 @@ function ProductById() {
                 "features": [
                     "Max. Operating Temperature: 85°C .",
                     "Temperature Range: -15°C to +85°C . • Flame Resistant: ASTM 2863",
-                
+
                 ],
                 "specifications": [
                     "Flammability: IEC 60332-1",
                     "High Abrasion Resistance",
-                    
+
                 ],
                 "other_info": [
                     "Flame Retardant",
@@ -203,19 +223,19 @@ function ProductById() {
                 "id": 10,
                 "type": "EVVO 4000TL-G2 / 5000TL-G2 / 6000TL-G2",
                 "img": evvo4,
-               "description": "Three Phase Inverter Dual MPPT",
+                "description": "Three Phase Inverter Dual MPPT",
                 "features": [
                     "Max 98.3% efficiency",
-                   
+
                 ],
                 "specifications": [
                     "Power Limit Export Feature",
-                    
+
                 ],
                 "other_info": [
                     "Interface Selection WiFi/RS485/GPRS",
                     "All in One, Flexible & Economical Solution",
-              
+
                 ]
             },
             {
@@ -225,16 +245,16 @@ function ProductById() {
                 "description": "Three Phase Inverter Dual MPPT",
                 "features": [
                     "Max 98.3% efficiency",
-                   
+
                 ],
                 "specifications": [
                     "Power Limit Export Feature",
-                    
+
                 ],
                 "other_info": [
                     "Interface Selection WiFi/RS485/GPRS",
                     "All in One, Flexible & Economical Solution",
-              
+
                 ]
             },
             {
@@ -244,11 +264,11 @@ function ProductById() {
                 "description": "Three Phase Inverter Dual MPPT",
                 "features": [
                     "Max 98.3% efficiency",
-                  
+
                 ],
                 "specifications": [
                     "Outdoor IP65 Production Level",
-                  
+
                 ],
                 "other_info": [
                     "Smart Control & Flexible Configuration",
@@ -262,11 +282,11 @@ function ProductById() {
                 "description": "Three Phase Inverter Dual MPPT",
                 "features": [
                     "Max 98.3% efficiency",
-                    
+
                 ],
                 "specifications": [
                     "Outdoor IP65 Production Level",
-                  
+
                 ],
                 "other_info": [
                     "Smart Control & Flexible Configuration",

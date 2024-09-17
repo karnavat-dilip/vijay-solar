@@ -342,10 +342,13 @@ function Home() {
               <div className='d-flex'>
                 <div>
                   <h4>Introduction</h4>
-                  <p>‘VIJAY SOLAR ENERGY’ is an authorized MNRE guaranteed Solar Contractor . ‘VIJAY SOLAR ENERGY’ has practical experience in custom solar power arrangements. </p>
-                  <h4>Production & Manufacturing Capacity
+                  <p>At Vijay Solar Energy, we’re dedicated to harnessing the power of the sun to drive a sustainable future. With a commitment to innovation and excellence, we provide cutting-edge solar energy solutions tailored to meet the diverse needs of our clients. Our mission is to deliver reliable, efficient, and environmentally friendly solar systems that not only reduce energy costs but also contribute to a cleaner planet.
+</p>
+                  <h4>Join Us in Shaping a Brighter Tomorrow
+
                   </h4>
-                  <p> It is our obsession to give you extraordinary consumer loyalty and administration in each part of your solar board establishment. ‘VIJAY SOLAR ENERGY’ is exclusive and worked by MNRE and GEDA . When they introduced solar boards on their home in 2018. </p>
+                  <p> Explore the benefits of solar energy with Vijay Solar Energy and take a step towards a more sustainable and cost-effective energy solution. Together, we can make a difference—one solar panel at a time.
+                  </p>
                 </div>
                 <div>
                   <img src={profile_img} id='profile-img' />
@@ -354,7 +357,8 @@ function Home() {
               <div>
                 <h4>Technology Innovations
                 </h4>
-                <p>WEL has four solar module manufacturing facilities in India, with international presence.</p>
+                <p>At Vijay Solar Energy, we’re at the forefront of solar technology, constantly pushing the boundaries to deliver the most advanced and efficient solar solutions available. Our commitment to innovation ensures that our clients benefit from cutting-edge technology that maximizes energy production and minimizes costs.
+                </p>
               </div>
             </div>
           </div>
@@ -415,25 +419,25 @@ function Home() {
             <div className='count-container'>
               <div className='totalno'>
 
-                {<CountUp start={0} end={112200} duration={2} delay={0} />}+
+                {<CountUp start={0} end={800} duration={2} delay={0} />}+
 
                 <h4>Happay Clients</h4>
               </div>
               <div className='totalno'>
 
-                {<CountUp start={0} end={22200} duration={5} delay={0} />}+
+                {<CountUp start={0} end={900} duration={5} delay={0} />}+
 
                 <h4>Total Projects</h4>
               </div>
               <div className='totalno'>
 
-                {<CountUp start={0} end={170} duration={5} delay={0} />}+
+                {<CountUp start={0} end={35} duration={5} delay={0} />}+
 
                 <h4>Total Product</h4>
               </div>
               <div className='totalno'>
 
-                {<CountUp start={0} end={12} duration={5} delay={0} />}+
+                {<CountUp start={0} end={10} duration={5} delay={0} />}+
 
                 <h4>Total Achivements</h4>
               </div>
